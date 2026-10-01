@@ -41,29 +41,33 @@
 
 <main id="conteudo">
 <section class="hero" id="topo">
-  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="hero__bg" aria-hidden="true">
+    <span class="orb orb--a"></span><span class="orb orb--b"></span>
+    <svg class="ecg" viewBox="0 0 1600 200" preserveAspectRatio="none" aria-hidden="true"><path class="ecg__line" d="M0 120 H420 L450 120 L480 60 L520 170 L560 20 L600 150 L630 120 H1000 L1030 120 L1060 70 L1100 160 L1140 30 L1180 140 L1210 120 H1600"/></svg>
+  </div>
   <div class="wrap hero__grid">
-    <div class="hero__txt reveal">
-      <p class="selo"><span class="pulso" aria-hidden="true"></span> Aberto agora · 24 horas, todos os dias</p>
-      <h1>Cuidado veterinário de confiança, <em>a qualquer hora.</em></h1>
-      <p class="lead">Internação, cirurgia, castração, vacinas, consultas e exames em Cuiabá, com uma equipe que trata o seu pet como parte da família.</p>
-      <div class="hero__cta">
-        <a class="btn btn--wa" href="#" data-wa="Olá! Vim pelo seu site e preciso de atendimento para o meu pet."><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3z"/><path d="M8.8 8.6c.3 3.1 2.6 5.4 5.8 5.8l1.1-1.2-1.7-1-.8.6c-.8-.4-1.5-1.1-1.9-1.9l.6-.8-1-1.7z" class="fill"/></svg>Chamar no WhatsApp</a>
+    <div class="hero__txt">
+      <p class="live"><span class="pulso" aria-hidden="true"></span><span>Aberto agora</span><i aria-hidden="true">·</i><span id="hora">24 horas</span><i aria-hidden="true">·</i><span>Cuiabá</span></p>
+      <h1 id="h1"><span class="w">Cuidado</span> <span class="w">veterinário</span> <span class="w">de</span> <span class="w">confiança,</span> <em><span class="w">a</span> <span class="w">qualquer</span> <span class="w">hora.</span></em></h1>
+      <p class="lead fade" style="--d:.9s">Internação, cirurgia, castração, vacinas, consultas e exames em um só lugar, com uma equipe que trata o seu pet como parte da família.</p>
+      <div class="hero__cta fade" style="--d:1.05s">
+        <a class="btn btn--wa btn--shine" href="#" data-wa="Olá! Vim pelo seu site e preciso de atendimento para o meu pet."><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3z"/><path d="M8.8 8.6c.3 3.1 2.6 5.4 5.8 5.8l1.1-1.2-1.7-1-.8.6c-.8-.4-1.5-1.1-1.9-1.9l.6-.8-1-1.7z" class="fill"/></svg>Chamar no WhatsApp</a>
         <a class="btn btn--ghost" href="https://www.google.com/maps/dir/?api=1&destination=Av.+Haiti+740+Jardim+das+Am%C3%A9ricas+Cuiab%C3%A1+MT" target="_blank" rel="noopener">Como chegar</a>
       </div>
-      <a class="nota" href="https://www.google.com/maps/search/?api=1&query=Andr%C3%A9+Rezende+Cl%C3%ADnica+Veterin%C3%A1ria+24h+Av.+Haiti+740+Cuiab%C3%A1" target="_blank" rel="noopener" aria-label="Nota 4,9 com 217 avaliações no Google. Abrir no Google Maps">
+      <a class="nota fade" style="--d:1.2s" href="https://www.google.com/maps/search/?api=1&query=Andr%C3%A9+Rezende+Cl%C3%ADnica+Veterin%C3%A1ria+24h+Av.+Haiti+740+Cuiab%C3%A1" target="_blank" rel="noopener" aria-label="Nota 4,9 com 217 avaliações no Google. Abrir no Google Maps">
         <span class="gl" aria-hidden="true"><svg viewBox="0 0 48 48" width="22" height="22"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.6 5.4 2.7 13.3l7.9 6.2C12.5 13.6 17.8 9.5 24 9.5z"/><path fill="#4285F4" d="M46.1 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.4c-.5 2.9-2.2 5.3-4.6 6.9l7.4 5.7c4.3-4 6.9-9.9 6.9-17.1z"/><path fill="#FBBC05" d="M10.5 28.6c-.5-1.4-.8-3-.8-4.6s.3-3.2.8-4.6l-7.9-6.1C1 16.6 0 20.2 0 24s1 7.4 2.7 10.7l7.8-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.4-5.7c-2.1 1.4-4.8 2.3-8.5 2.3-6.2 0-11.5-4.1-13.4-9.8l-7.8 6.1C6.6 42.6 14.6 48 24 48z"/></svg></span><span class="estrelas" aria-hidden="true">★★★★★</span><b>4,9</b><span>no Google · 217 avaliações</span>
       </a>
     </div>
-    <div class="hero__foto reveal" data-parallax>
-      <div class="moldura"><img src="img/eq-hero.webp" width="1000" height="874" alt="Dr. André Rezende e a Dra. com seus gatos no colo, na clínica" fetchpriority="high"></div>
-      <ul class="chips" aria-label="Destaques">
-        <li><b>24h</b> plantão todos os dias</li>
-        <li><b>4,9</b> no Google</li>
-        <li><b>TV</b> quadro no Crispim Neto</li>
-      </ul>
+    <div class="stage" id="stage" aria-hidden="false">
+      <div class="stage__glow" aria-hidden="true"></div>
+      <figure class="stage__main" data-depth="14"><img src="img/equipe-grande.webp" width="1080" height="662" alt="Dr. André Rezende e duas médicas-veterinárias da equipe, de braços cruzados" fetchpriority="high"></figure>
+      <figure class="stage__ring" data-depth="30"><img src="img/eq-hero.webp" width="1000" height="874" alt="Dr. André Rezende e a Dra. com seus gatos no colo"></figure>
+      <div class="glass glass--a" data-depth="46"><b>24h</b><span>plantão todos os dias</span></div>
+      <div class="glass glass--b" data-depth="38"><span class="estrelas" aria-hidden="true">★★★★★</span><b>4,9</b><span>217 avaliações</span></div>
+      <div class="glass glass--c" data-depth="52"><b>TV</b><span>quadro no Crispim Neto</span></div>
     </div>
   </div>
+  <div class="ticker" aria-hidden="true"><div class="ticker__in"><span>Plantão 24h</span><span>Internação</span><span>Cirurgia geral</span><span>Castração</span><span>Vacinas</span><span>Raio X digital</span><span>Ultrassom</span><span>Exames</span><span>Dermatologia</span><span>Oncologia</span><span>Plantão 24h</span><span>Internação</span><span>Cirurgia geral</span><span>Castração</span><span>Vacinas</span><span>Raio X digital</span><span>Ultrassom</span><span>Exames</span><span>Dermatologia</span><span>Oncologia</span></div></div>
 </section>
 
 <section class="faixa" aria-label="Destaques">
